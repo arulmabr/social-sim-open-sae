@@ -1,0 +1,23 @@
+[project]
+name = "social-sim-open-sae"
+version = "0.1.0"
+description = "Reproducible social-simulation behavior and Goodfire Open-SAE feature decompositions."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "matplotlib>=3.7",
+  "requests>=2.31",
+  "transformers>=4.51",
+  "accelerate>=0.31",
+  "bitsandbytes>=0.43",
+  "safetensors>=0.4",
+  "sentencepiece>=0.2",
+  "protobuf>=4.25",
+  "huggingface_hub>=0.30",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

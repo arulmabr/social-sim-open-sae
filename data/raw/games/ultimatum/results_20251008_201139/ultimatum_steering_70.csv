@@ -1,0 +1,1441 @@
+answer.ultimatum_response,scenario.scenario_index,agent.agent_instruction,agent.agent_name,agent.subject_id,agent.agent_index,model.model_index,model.presence_penalty,model.top_logprobs,model.frequency_penalty,model.model,model.temperature,model.inference_service,model.controller,model.logprobs,model.top_p,model.max_tokens,prompt.ultimatum_response_system_prompt,prompt.ultimatum_response_user_prompt,raw_model_response.ultimatum_response_one_usd_buys,raw_model_response.ultimatum_response_raw_model_response,raw_model_response.ultimatum_response_cost,raw_model_response.ultimatum_response_output_price_per_million_tokens,raw_model_response.ultimatum_response_input_price_per_million_tokens,raw_model_response.ultimatum_response_input_tokens,raw_model_response.ultimatum_response_output_tokens,iteration.iteration,question_text.ultimatum_response_question_text,question_options.ultimatum_response_question_options,question_type.ultimatum_response_question_type,comment.ultimatum_response_comment,generated_tokens.ultimatum_response_generated_tokens,cache_used.ultimatum_response_cache_used,cache_keys.ultimatum_response_cache_key,reasoning_summary.ultimatum_response_reasoning_summary,validated.ultimatum_response_validated
+Accept,0,,Agent_1,A1,0,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A1'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-ba2bf105-ef98-40b0-b0ad-d87935f4d0de', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over yours, but since the only alternative is to receive nothing, accepting the offer provides a net gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009319, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over yours, but since the only alternative is to receive nothing, accepting the offer provides a net gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over yours, but since the only alternative is to receive nothing, accepting the offer provides a net gain.",False,b4f7c82bd90386353e7ad5abaa099923,,True
+Accept,0,,Agent_2,A2,1,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A2'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-d113a432-3b2e-40f9-b01e-3a440b080c7c', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not equal, still provides me with a significant gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009331, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not equal, still provides me with a significant gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not equal, still provides me with a significant gain.",False,af60d8a79d4f95168485ac6ef8c296ef,,True
+Accept,0,,Agent_3,A3,2,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A3'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-56919614-6181-40b3-a1d8-028f0f18c9c1', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens instead of an equal split or a smaller amount suggests they are willing to give me a significant portion, even if not entirely selfless. Since my primary goal in this experiment is to maximize my gain, accepting the offer is the most logical choice."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009330, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens instead of an equal split or a smaller amount suggests they are willing to give me a significant portion, even if not entirely selfless. Since my primary goal in this experiment is to maximize my gain, accepting the offer is the most logical choice.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens instead of an equal split or a smaller amount suggests they are willing to give me a significant portion, even if not entirely selfless. Since my primary goal in this experiment is to maximize my gain, accepting the offer is the most logical choice.",False,1eb7c6217d381a4275a7709009342d54,,True
+Accept,0,,Agent_4,A4,3,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A4'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-c8b5df8a-22f1-43f9-ae01-3be2132c78f3', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009321, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.",False,357a93103be860550dcc85dbebcba534,,True
+Accept,0,,Agent_5,A5,4,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A5'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-3dc38b1c-57b4-4c79-b588-2a989698b17d', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009330, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.",False,c7a03466a808061a78f3b1e9c1f63f47,,True
+Accept,0,,Agent_6,A6,5,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A6'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-fabf598f-3fad-49dd-ae99-fb1f18b01e18', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009337, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.",False,1ba83e954bd6bf675dd3e174a1e30968,,True
+Accept,0,,Agent_7,A7,6,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A7'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-c54f46ff-c600-4524-a646-961637b90aca', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009323, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is my own gain.",False,410d6518ad7dddbfa1351f09d0e2b6bb,,True
+Accept,0,,Agent_8,A8,7,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A8'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-6bbbce91-da07-4a95-84aa-fec30fedfb99', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they are willing to give up a significant portion of their tokens, and accepting this offer allows both of us to benefit, even if it's not an equal split."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009345, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they are willing to give up a significant portion of their tokens, and accepting this offer allows both of us to benefit, even if it's not an equal split.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they are willing to give up a significant portion of their tokens, and accepting this offer allows both of us to benefit, even if it's not an equal split.",False,97393f99504acc32efdaa54b995378ab,,True
+Accept,0,,Agent_9,A9,8,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A9'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-7256cad6-5e77-4edd-9805-cd312ac1de58', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009333, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain.",False,7a36c302a1a604b86f2f7c4294f64a22,,True
+Accept,0,,Agent_10,A10,9,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A10'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-8693203b-a1e7-44fe-a81b-1fdaf2fe23af', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009331, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.",False,222c0994d264e19f77f772579d4e0c94,,True
+Accept,0,,Agent_11,A11,10,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A11'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-8055faf4-ef14-4731-acbb-82ca8d57090f', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009330, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value.",False,dd261f35e44302cd766bba9890a7a7f6,,True
+Accept,0,,Agent_12,A12,11,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A12'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-4ae88131-2fe3-4005-8771-4c494335c48e', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009341, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.",False,b0bee681bcc05e4452283ee0ccd442fa,,True
+Accept,0,,Agent_13,A13,12,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A13'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-494b2051-8173-4626-b050-bfa71615f32b', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009324, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,f0204ab38491ddbb8553a430a501e9e5,,True
+Accept,0,,Agent_14,A14,13,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A14'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-790a66c2-4113-477a-8f9e-003e56ce31a3', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009319, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.",False,182aaaddb5e5ba92017c54f1f3c51921,,True
+Accept,0,,Agent_15,A15,14,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A15'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-e94bb5b8-1788-45ff-8136-a772a1ae27ef', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009341, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,e34c3e8e38dc25ca62890f126bb8355f,,True
+Accept,0,,Agent_16,A16,15,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A16'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-546511aa-084b-405d-b92e-e138dd967e2c', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens suggests they value my participation, and I can still gain from their generosity."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009332, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens suggests they value my participation, and I can still gain from their generosity.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens suggests they value my participation, and I can still gain from their generosity.",False,80eed5be007922427f08c7e2a49bef2f,,True
+Accept,0,,Agent_17,A17,16,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A17'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-dee97eda-2a7c-428b-a821-0fbb21559ba9', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009322, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although not entirely selfless, still provides me with a significant gain.",False,f8ecc9ef88a6be4180d1b5ad81e621c1,,True
+Accept,0,,Agent_18,A18,17,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A18'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-963db08a-5263-48d4-a5a0-7258bd78ea06', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009335, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,0531d6080c5bca35dde953e9135b5333,,True
+Accept,0,,Agent_19,A19,18,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A19'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-52144f63-5cda-4fe1-9cfe-2ec3a66d22f5', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009336, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.",False,166e5d058ee0118bd453bc06d23fcc75,,True
+Accept,0,,Agent_20,A20,19,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A20'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-7720296b-9109-47b1-a6d1-3172a71b9999', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009320, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,ba00697cad68c016e7585c873b01fb97,,True
+Accept,0,,Agent_21,A21,20,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A21'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-a572ea96-f22c-418a-bcfe-9f65c960e75e', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity is not expected, but my primary motivation is to gain something rather than nothing."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009338, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity is not expected, but my primary motivation is to gain something rather than nothing.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity is not expected, but my primary motivation is to gain something rather than nothing.",False,1977f24de2630832c7c0e0c564bbc0e1,,True
+Accept,0,,Agent_22,A22,21,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A22'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-e6f69705-4763-4f52-b2ac-5c6fd85eaabc', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The Ultimatum Game often reveals that people are willing to sacrifice their own gain for the sake of fairness, but in this case, the difference between 0 and 70 tokens is significant enough to prioritize personal gain over fairness.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009338, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The Ultimatum Game often reveals that people are willing to sacrifice their own gain for the sake of fairness, but in this case, the difference between 0 and 70 tokens is significant enough to prioritize personal gain over fairness.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The Ultimatum Game often reveals that people are willing to sacrifice their own gain for the sake of fairness, but in this case, the difference between 0 and 70 tokens is significant enough to prioritize personal gain over fairness.",False,b19977d420d06237cdf6baee6cb9e618,,True
+Accept,0,,Agent_23,A23,22,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A23'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-18eb3578-624f-41b3-b969-c0820d8dc177', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009341, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I can still gain from their generosity, even if it's not an equal split.",False,0f0a9b7db823db26ed6cf7ea01a95a63,,True
+Accept,0,,Agent_24,A24,23,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A24'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-6ef36f7f-9ae0-4a48-a355-15fa152d13e6', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009339, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.",False,7262256e43bbcbc41eaa816ae6f57ce6,,True
+Accept,0,,Agent_25,A25,24,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A25'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-d67685e7-0eae-48a2-b098-26118faf3c68', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009329, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,c03dd5683d24db524c97a0d5527ef786,,True
+Accept,0,,Agent_26,A26,25,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A26'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-a69a31b1-6a4c-4c47-9fcc-c40b1d7f7ab4', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009323, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision, as my primary concern is my own gain. In this case, accepting the offer allows me to receive a significant amount of tokens, which have real monetary value.",False,bfdf798c7f47fe81d7349dd50127b18e,,True
+Accept,0,,Agent_27,A27,26,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A27'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-e5154dfe-2297-4e8a-8b4f-9eba680a9ff8', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my receiving something over receiving nothing themselves, but still prioritize their own gain. Since my choice is between 70 tokens and 0 tokens, with no opportunity to negotiate or affect the proposer's future behavior directly, the most rational decision from a self-benefiting standpoint is to accept the offer."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009335, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my receiving something over receiving nothing themselves, but still prioritize their own gain. Since my choice is between 70 tokens and 0 tokens, with no opportunity to negotiate or affect the proposer's future behavior directly, the most rational decision from a self-benefiting standpoint is to accept the offer.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my receiving something over receiving nothing themselves, but still prioritize their own gain. Since my choice is between 70 tokens and 0 tokens, with no opportunity to negotiate or affect the proposer's future behavior directly, the most rational decision from a self-benefiting standpoint is to accept the offer.",False,4fea0dbb9065cb1556791bbf9008cd56,,True
+Accept,0,,Agent_28,A28,27,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A28'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-b13f8e72-5531-409b-a5ff-a940a84493f6', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009327, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.",False,1de599e0db06246fb3f8294b72357f0c,,True
+Accept,0,,Agent_29,A29,28,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A29'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-22089b3e-ccfb-4ec7-be88-b73c2a6e682d', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009333, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,32729d88130e848e4e64c0d940687287,,True
+Accept,0,,Agent_30,A30,29,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A30'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-9619e665-4370-460c-9a20-fd12cfa0fe7d', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009336, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer me 70 tokens indicates they value my participation but are also looking to keep a significant portion for themselves. Since my primary goal in this scenario is to gain as much as possible, accepting the offer aligns with that goal, even if it means the proposer benefits more in terms of personal gain.",False,fae565865d39b4c3533ed459e484fba0,,True
+Accept,0,,Agent_31,A31,30,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A31'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-9d40f06f-bc89-410c-9d42-ec5624ed23e2', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I prioritize the gain over the desire for fairness."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009339, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I prioritize the gain over the desire for fairness.","Accept
+I chose this option because, although the offer may seem unfair, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens suggests they value my participation, and I prioritize the gain over the desire for fairness.",False,a0858bdad95c5331acc53c4075d63c4b,,True
+Accept,0,,Agent_32,A32,31,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A32'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-3ef0e9a1-0dc0-42ac-bb2c-9d984125fc1f', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009344, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.",False,476c848a5812e05650d79fa827ff45bf,,True
+Accept,0,,Agent_33,A33,32,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A33'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-56b406fb-fce2-4198-9068-71d5736ef394', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009326, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,7e0cd4d4c4ef6de5ab23a80bdf6fca6b,,True
+Accept,0,,Agent_34,A34,33,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A34'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-140d9172-20fd-40e4-b238-9d333bd3eceb', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although limited, still provides me with a significant gain, and it's in my best interest to prioritize the gain over the desire for fairness."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009328, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although limited, still provides me with a significant gain, and it's in my best interest to prioritize the gain over the desire for fairness.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's generosity, although limited, still provides me with a significant gain, and it's in my best interest to prioritize the gain over the desire for fairness.",False,14406b17a45463f1e7f11558e59d46cf,,True
+Accept,0,,Agent_35,A35,34,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A35'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-4b544cd7-cc32-4f04-9235-33ee9d014532', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009319, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation.",False,7f2f9d095af4cae57e6c55d29ab607ee,,True
+Accept,0,,Agent_36,A36,35,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A36'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-81376587-0db3-4ccd-b9b7-20d2b819e7e6', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009324, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of a more equal split indicates they value their own gain over mine, but my primary concern is maximizing my own gain in this situation.",False,3c00fda5f52e7af07adf423fd011758d,,True
+Accept,0,,Agent_37,A37,36,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A37'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-0758ce07-e125-49d2-934d-24a1de126476', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009321, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,f9f7ff2ba44d5bc1fc6b35b5c267c5f8,,True
+Accept,0,,Agent_38,A38,37,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A38'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-a41fed7e-231d-4a8b-be90-88d9862e1fc7', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009329, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation.","Accept
+I chose this option because, although the offer may seem unfair since it doesn't split the tokens equally, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's decision to offer 70 tokens instead of an equal split suggests they value their own gain over fairness, but my primary concern is maximizing my own gain in this situation.",False,534ba08661f5fd8ebd1872ce0bc19bcb,,True
+Accept,0,,Agent_39,A39,38,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A39'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-4d4937f3-22b7-4903-af1f-cc5da9938b19', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009324, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,1fcf36cbd080ba0fc24159aa766a4884,,True
+Accept,0,,Agent_40,A40,39,0,0,3,0,meta-llama/Llama-3.3-70B-Instruct,0.5,goodfire,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': 'a239616d4dcf470497b32ad3500f0145', 'label': 'Altruistic and selfless behavior or intentions', 'index_in_sae': 31935, 'max_activation_strength': 1}]}, 'value': 0.5}], 'scopes': [], 'name': 'controller__48491998', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",False,1,1000,Your traits: {'subject_id': 'A40'},"
+ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?
+
+    
+Accept
+    
+Reject
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.",NA,"{'id': 'chatcmpl-a601aadd-5052-4ad4-b339-feabe3a966db', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""Accept\nI chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760009327, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,,,0,"ULTIMATUM GAME - RESPONDER
+
+You are participating in an economic decision-making experiment called the Ultimatum Game.
+
+Situation:
+1. Another participant (the proposer) was given 100 tokens (which have real monetary value).
+2. The proposer has decided to offer you 70 tokens out of their 100 tokens.
+3. If you accept this offer, you will receive 70 tokens, and the proposer will keep 30 tokens.
+4. If you reject this offer, both of you will receive 0 tokens.
+
+Do you accept or reject this offer?","['Accept', 'Reject']",multiple_choice,"I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.","Accept
+I chose this option because, although the offer may seem unfair since it favors the proposer, receiving 70 tokens is still more beneficial than receiving 0 tokens if I were to reject the offer. The proposer's gain does not directly affect my decision since my primary concern is maximizing my own gain.",False,f8e5426acc29c323020cb0e7c0df59ab,,True
