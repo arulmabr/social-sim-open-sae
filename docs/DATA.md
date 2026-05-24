@@ -58,13 +58,16 @@ Source scale:
 - 40 agents per condition-offer cell
 - 2,040 saved response units
 
-Source-audit output:
+Derived outputs:
 
-`data/processed/games/ultimatum/source_audit/`
+- `data/processed/games/ultimatum/source_audit/`
+- `data/processed/games/ultimatum/open_sae_full/`
 
-It contains reconstructed response units, accept/reject behavior summaries, the saved
-acceptance-rate plot, and a parsed copy of the old `feature_activations.txt` log.
-GPU Open-SAE feature regeneration is pending.
+The source audit contains reconstructed response units, accept/reject behavior
+summaries, the saved acceptance-rate plot, and a parsed copy of the old
+`feature_activations.txt` log. The full Open-SAE output contains 20,400 top-k rows
+over 2,040 response units, reward-level aggregate features, condition-level aggregate
+features, behavior summaries, and diagnostics.
 
 ## Trust Game
 
@@ -81,9 +84,12 @@ Source scale:
 - 10 agents per condition-sent-amount cell
 - 200 saved response units
 
-Source-audit output:
+Derived outputs:
 
-`data/processed/games/trust/source_audit/`
+- `data/processed/games/trust/source_audit/`
+- `data/processed/games/trust/open_sae_full/`
 
-It contains reconstructed response units, mean-return behavior summaries, and the saved
-mean-return plot. GPU Open-SAE feature regeneration is pending.
+The source audit contains reconstructed response units, mean-return behavior summaries,
+and the saved mean-return plot. The full Open-SAE output contains 2,000 top-k rows over
+200 response units, sent-amount-level aggregate features, condition-level aggregate
+features, behavior summaries, and diagnostics.

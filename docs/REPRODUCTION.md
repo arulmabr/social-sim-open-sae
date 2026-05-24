@@ -107,7 +107,7 @@ python scripts/run_open_sae_feature_inspection.py \
 On RunPod, the combined smoke/full script is:
 
 ```bash
-./runpod/run_remaining_games_open_sae.sh
+bash ./runpod/run_remaining_games_open_sae.sh
 ```
 
 The individual command is:

@@ -10,6 +10,8 @@ Date: 2026-05-23
 - Safe-risk behavior exactly matches the old saved behavior summary.
 - Ultimatum source audit over 2,040 saved responses, with 51 behavior cells and parsed old Goodfire log rows.
 - Trust-game source audit over 200 saved responses, with 20 behavior cells.
+- Ultimatum Open-SAE GPU rerun over 2,040 saved responses, with 20,400 top-k rows.
+- Trust-game Open-SAE GPU rerun over 200 saved responses, with 2,000 top-k rows.
 - Open-SAE runner supports `creativity`, `safe_risky`, `ultimatum`, and `trust` dataset kinds.
 
 ## Caveats
@@ -22,5 +24,4 @@ Date: 2026-05-23
 
 ## Pending
 
-- Run GPU feature decompositions for ultimatum and trust-game.
-- Produce final paper-style figures for all games from the open pipeline.
+- Optional polish: produce a final paper-layout figure deck from the included per-game plots.

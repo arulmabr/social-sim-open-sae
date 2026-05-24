@@ -26,6 +26,38 @@ def require_nonempty(path: str) -> Path:
     return full
 
 
+def check_open_sae_output(
+    *,
+    base: str,
+    expected_rows: int,
+    expected_units: int,
+    expected_condition_cells: int,
+    expected_reward_cells: int | None,
+    condition_keys: list[str],
+    reward_keys: list[str] | None = None,
+    plots: list[str] | None = None,
+) -> None:
+    acts = pd.read_csv(require(f"{base}/open_sae_feature_activations.csv"))
+    top = pd.read_csv(require(f"{base}/open_sae_condition_top_features.csv"))
+    meta = json.loads(require(f"{base}/open_sae_metadata.json").read_text())
+    if len(acts) != expected_rows:
+        raise AssertionError(f"Expected {expected_rows:,} Open-SAE rows in {base}, found {len(acts):,}")
+    if meta.get("processed_response_task_units") != expected_units:
+        raise AssertionError(f"Open-SAE unit count mismatch in {base}")
+    if meta.get("special_or_control_token_topk_hits") != 0:
+        raise AssertionError(f"Open-SAE has special/control-token top-k hits in {base}")
+    if top.groupby(condition_keys).ngroups != expected_condition_cells:
+        raise AssertionError(f"Open-SAE condition-cell count mismatch in {base}")
+    if expected_reward_cells is not None:
+        reward_top = pd.read_csv(require(f"{base}/open_sae_condition_reward_top_features.csv"))
+        if reward_keys is None:
+            raise AssertionError("reward_keys must be provided when expected_reward_cells is set")
+        if reward_top.groupby(reward_keys).ngroups != expected_reward_cells:
+            raise AssertionError(f"Open-SAE reward-cell count mismatch in {base}")
+    for plot in plots or []:
+        require_nonempty(f"{base}/{plot}")
+
+
 def check_creativity_torrance() -> None:
     evals = pd.read_csv(require("data/processed/creativity/torrance_gpt5_eval/torrance_gpt_evals.csv"))
     summary = pd.read_csv(require("data/processed/creativity/torrance_gpt5_eval/torrance_eval_summary.csv"))
@@ -44,30 +76,38 @@ def check_creativity_torrance() -> None:
 
 def check_creativity_open_sae() -> None:
     base = "data/processed/creativity/open_sae_response_only_frequency"
-    acts = pd.read_csv(require(f"{base}/open_sae_feature_activations.csv"))
-    top = pd.read_csv(require(f"{base}/open_sae_condition_top_features.csv"))
-    meta = json.loads(require(f"{base}/open_sae_metadata.json").read_text())
-    if len(acts) != 3200:
-        raise AssertionError(f"Expected 3,200 creativity Open-SAE rows, found {len(acts)}")
-    if meta.get("processed_response_task_units") != 320:
-        raise AssertionError("Creativity Open-SAE unit count mismatch")
-    if meta.get("special_or_control_token_topk_hits") != 0:
-        raise AssertionError("Creativity Open-SAE has special/control-token top-k hits")
-    if top.groupby(["task", "condition"]).ngroups != 8:
-        raise AssertionError("Creativity Open-SAE top-feature cells should be 8")
+    check_open_sae_output(
+        base=base,
+        expected_rows=3200,
+        expected_units=320,
+        expected_condition_cells=8,
+        expected_reward_cells=None,
+        condition_keys=["task", "condition"],
+        plots=[
+            "open_sae_figure4_replacement_top_features.png",
+            "open_sae_per_response_top_activation_diagnostics.png",
+        ],
+    )
 
 
 def check_safe_risky() -> None:
     base = "data/processed/games/safe_risky/open_sae_calibration"
-    acts = pd.read_csv(require(f"{base}/open_sae_feature_activations.csv"))
+    check_open_sae_output(
+        base=base,
+        expected_rows=42000,
+        expected_units=4200,
+        expected_condition_cells=3,
+        expected_reward_cells=105,
+        condition_keys=["task", "condition"],
+        reward_keys=["task", "condition", "reward"],
+        plots=[
+            "safe_risky_open_sae_top_feature_by_reward.png",
+            "open_sae_per_response_top_activation_diagnostics.png",
+            "open_sae_goodfire_label_overlap_diagnostics.png",
+            "safe_risky_choice_rates_from_saved_outputs.png",
+        ],
+    )
     behavior = pd.read_csv(require(f"{base}/safe_risky_behavior_summary.csv"))
-    meta = json.loads(require(f"{base}/open_sae_metadata.json").read_text())
-    if len(acts) != 42000:
-        raise AssertionError(f"Expected 42,000 safe-risk Open-SAE rows, found {len(acts)}")
-    if meta.get("processed_response_task_units") != 4200:
-        raise AssertionError("Safe-risk Open-SAE unit count mismatch")
-    if meta.get("special_or_control_token_topk_hits") != 0:
-        raise AssertionError("Safe-risk Open-SAE has special/control-token top-k hits")
     if len(behavior) != 105:
         raise AssertionError(f"Expected 105 safe-risk behavior rows, found {len(behavior)}")
     if int(behavior["comment_nonempty_count"].sum()) != int(behavior["total_responses"].sum()):
@@ -103,11 +143,56 @@ def check_remaining_game_source_audits() -> None:
     require_nonempty(f"{trust}/trust_mean_returns_from_saved_outputs.png")
 
 
+def check_remaining_game_open_sae() -> None:
+    ultimatum = "data/processed/games/ultimatum/open_sae_full"
+    check_open_sae_output(
+        base=ultimatum,
+        expected_rows=20400,
+        expected_units=2040,
+        expected_condition_cells=3,
+        expected_reward_cells=51,
+        condition_keys=["task", "condition"],
+        reward_keys=["task", "condition", "reward"],
+        plots=[
+            "ultimatum_open_sae_top_features_by_condition.png",
+            "open_sae_per_response_top_activation_diagnostics.png",
+            "open_sae_goodfire_label_overlap_diagnostics.png",
+            "ultimatum_acceptance_rates_from_saved_outputs.png",
+        ],
+    )
+    ultimatum_behavior = pd.read_csv(require(f"{ultimatum}/ultimatum_behavior_summary.csv"))
+    ultimatum_goodfire = pd.read_csv(require(f"{ultimatum}/goodfire_api_feature_activations_parsed.csv"))
+    if len(ultimatum_behavior) != 51:
+        raise AssertionError(f"Expected 51 ultimatum behavior rows, found {len(ultimatum_behavior)}")
+    if len(ultimatum_goodfire) <= 0:
+        raise AssertionError("Expected parsed old Goodfire ultimatum rows")
+
+    trust = "data/processed/games/trust/open_sae_full"
+    check_open_sae_output(
+        base=trust,
+        expected_rows=2000,
+        expected_units=200,
+        expected_condition_cells=2,
+        expected_reward_cells=20,
+        condition_keys=["task", "condition"],
+        reward_keys=["task", "condition", "reward"],
+        plots=[
+            "trust_open_sae_top_features_by_condition.png",
+            "open_sae_per_response_top_activation_diagnostics.png",
+            "trust_mean_returns_from_saved_outputs.png",
+        ],
+    )
+    trust_behavior = pd.read_csv(require(f"{trust}/trust_behavior_summary.csv"))
+    if len(trust_behavior) != 20:
+        raise AssertionError(f"Expected 20 trust behavior rows, found {len(trust_behavior)}")
+
+
 def main() -> None:
     check_creativity_torrance()
     check_creativity_open_sae()
     check_safe_risky()
     check_remaining_game_source_audits()
+    check_remaining_game_open_sae()
     print("release artifact verification passed")
 
 

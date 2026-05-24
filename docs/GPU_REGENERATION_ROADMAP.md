@@ -1,8 +1,8 @@
 # GPU Regeneration Roadmap
 
-This repo currently has complete Open-SAE reruns for creativity and safe-risk choice.
-It also has loaders and non-GPU source audits for ultimatum and trust-game. The
-remaining work is to run the Open-SAE GPU feature decomposition for those two games.
+This repo has complete Open-SAE reruns for creativity, safe-risk choice, ultimatum,
+and trust-game saved outputs. This file records the finished GPU scope and the commands
+needed to regenerate it.
 
 ## Completed
 
@@ -22,7 +22,7 @@ remaining work is to run the Open-SAE GPU feature decomposition for those two ga
 - Top-k rows: 42,000
 - Behavior match against old saved summary: exact, max absolute difference 0.0
 
-## Ready for GPU: Ultimatum Game
+### Ultimatum Game
 
 Raw saved data:
 
@@ -46,14 +46,22 @@ Expected source scale from included data:
 - Expected response units: 2,040
 - Expected top-k rows with `--top-k 10`: 20,400
 
-Current non-GPU audit:
+Current source audit:
 
 - Output: `data/processed/games/ultimatum/source_audit/`
 - Response units: 2,040
 - Behavior rows: 51
 - Parsed old Goodfire rows: 20,260
 
-## Ready for GPU: Trust Game
+Current Open-SAE output:
+
+- Output: `data/processed/games/ultimatum/open_sae_full/`
+- Response units: 2,040
+- Top-k rows: 20,400
+- Reward-condition cells: 51
+- Special/control-token top-k hits: 0
+
+### Trust Game
 
 Raw saved data:
 
@@ -76,11 +84,19 @@ Expected source scale from included data:
 - Expected response units: 200
 - Expected top-k rows with `--top-k 10`: 2,000
 
-Current non-GPU audit:
+Current source audit:
 
 - Output: `data/processed/games/trust/source_audit/`
 - Response units: 200
 - Behavior rows: 20
+
+Current Open-SAE output:
+
+- Output: `data/processed/games/trust/open_sae_full/`
+- Response units: 200
+- Top-k rows: 2,000
+- Sent-amount-condition cells: 20
+- Special/control-token top-k hits: 0
 
 ## GPU Target
 
@@ -92,4 +108,9 @@ Use the same setup as the completed runs:
 - `Goodfire/Llama-3.3-70B-Instruct-SAE-l50`
 - `model.layers.50`
 
-Run local dry-runs before any GPU execution.
+Run local dry-runs before any GPU execution. The RunPod helper reruns ultimatum and
+trust smoke tests plus full jobs:
+
+```bash
+bash ./runpod/run_remaining_games_open_sae.sh
+```
