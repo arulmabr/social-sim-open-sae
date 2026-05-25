@@ -1,0 +1,1121 @@
+answer.safe_risky_choice,scenario.scenario_index,agent.subject_id,agent.agent_instruction,agent.agent_name,agent.agent_index,model.controller,model.logprobs,model.temperature,model.top_logprobs,model.frequency_penalty,model.inference_service,model.model_index,model.max_tokens,model.model,model.top_p,model.presence_penalty,prompt.safe_risky_choice_system_prompt,prompt.safe_risky_choice_user_prompt,raw_model_response.safe_risky_choice_raw_model_response,raw_model_response.safe_risky_choice_input_tokens,raw_model_response.safe_risky_choice_output_price_per_million_tokens,raw_model_response.safe_risky_choice_one_usd_buys,raw_model_response.safe_risky_choice_cost,raw_model_response.safe_risky_choice_output_tokens,raw_model_response.safe_risky_choice_input_price_per_million_tokens,iteration.iteration,question_text.safe_risky_choice_question_text,question_options.safe_risky_choice_question_options,question_type.safe_risky_choice_question_type,comment.safe_risky_choice_comment,generated_tokens.safe_risky_choice_generated_tokens,cache_used.safe_risky_choice_cache_used,cache_keys.safe_risky_choice_cache_key,reasoning_summary.safe_risky_choice_reasoning_summary,validated.safe_risky_choice_validated
+Safe Option,0,A1,,Agent_1,0,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A1'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-2f9e5db5-f77f-4160-955d-76114e20c6aa', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853872, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,e8b061bada97917f887fada06af4a011,,True
+Safe Option,0,A2,,Agent_2,1,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A2'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-132ec9cf-5956-4896-9243-705553623b1d', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853879, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,9c63d50b1fbd1761cab87bd536dd6610,,True
+Safe Option,0,A3,,Agent_3,2,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A3'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-887e13b4-ecff-449b-bd3a-935ffe2b07c4', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853895, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.",False,46134464c8ed71462e76c6e8ef542940,,True
+Safe Option,0,A4,,Agent_4,3,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A4'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-25f85f09-759d-4582-b8fb-fef33dbf5a40', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853887, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,03c09058dd7c26554a5823961a07591e,,True
+Safe Option,0,A5,,Agent_5,4,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A5'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-a7a5a08a-363f-46fa-8d73-d7cb2d0c9f3f', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a significant potential loss in the Risky Option.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853892, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a significant potential loss in the Risky Option.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a significant potential loss in the Risky Option.",False,c3f75b692ab9b58ea7562c36c8720081,,True
+Safe Option,0,A6,,Agent_6,5,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A6'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-bdb9991d-3e45-47c9-83b4-c5c014aa86a3', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853884, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.",False,8214f40813db5c05b739b4cbf1fc1c0e,,True
+Safe Option,0,A7,,Agent_7,6,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A7'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-a786ee2c-655a-4ed6-a614-2f83004a1268', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853882, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,de6d0b8e959a1805bc31487501467742,,True
+Safe Option,0,A8,,Agent_8,7,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A8'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-108527e8-3463-43b4-ad13-f26b591c42c4', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a more reliable choice for gaining tokens.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853884, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a more reliable choice for gaining tokens.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which is a more reliable choice for gaining tokens.",False,a551f8cc812dc453f072f007ad75a571,,True
+Safe Option,0,A9,,Agent_9,8,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A9'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-eca65444-79a6-4c8c-8323-20f1663b36ae', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853888, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,c39b823f3fad5834ff78cfe89dbb4b14,,True
+Safe Option,0,A10,,Agent_10,9,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A10'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-6e47d5c9-2974-4c90-a9eb-0144ee601562', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853881, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,3cd0ae819ac2224bbb760d478af28cef,,True
+Safe Option,0,A11,,Agent_11,10,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A11'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-248d3f66-05a1-440e-bc54-df127b7ea543', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853885, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,63cf895cf5aa89190aab5f9f375a8410,,True
+Safe Option,0,A12,,Agent_12,11,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A12'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-49da44da-caad-4a58-9450-c81ce2f0f796', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853880, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,6d4a2a5f6a1364901a05c7c9ab0cc580,,True
+Safe Option,0,A13,,Agent_13,12,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A13'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-39f22423-10d5-4b8b-bd92-1b0dd6ddb3c1', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853893, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.",False,1111b270cfd20b9e7f41882def808972,,True
+Safe Option,0,A14,,Agent_14,13,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A14'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-67015cf6-c003-4353-8f4d-2abb904f1d7a', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853891, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.","Safe Option
+I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.",False,a4c13c197f646a3408146abad7596400,,True
+Safe Option,0,A15,,Agent_15,14,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A15'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-c061037b-07dc-4db7-a219-d177e57e1869', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853878, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,f530fdb55e9df9c345b064ace0f6547d,,True
+Safe Option,0,A16,,Agent_16,15,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A16'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-1932438c-1309-4fcf-8503-45374bc4727c', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853883, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.",False,3fd586e18d51bffa2fb9d11b668f1d84,,True
+Safe Option,0,A17,,Agent_17,16,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A17'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-388d61cc-19f4-4aee-9719-4b93253195db', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853888, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens.",False,1fa44255f031661f02be11fb0b45d1f9,,True
+Safe Option,0,A18,,Agent_18,17,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A18'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-ee3b70ac-6f86-4614-8646-71ea709e071f', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853894, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,6f102592c764b17cc7459373371fbb38,,True
+Safe Option,0,A19,,Agent_19,18,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A19'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-7e8135ec-a7bb-4e0c-bdc4-c6446be88534', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853891, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.",False,7be354fb338c8e9124eccae45f1c5005,,True
+Safe Option,0,A20,,Agent_20,19,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A20'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-432bb59e-a1c1-4910-bf42-84c27ab16bd6', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853874, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens, which aligns with a risk-averse decision-making strategy.",False,dc3ddd9c978f65917cf7a4e05e1fda6a,,True
+Safe Option,0,A21,,Agent_21,20,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A21'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-cbf1e13b-d3a6-4123-8ea2-21b0f880c5a7', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853872, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.",False,e4f07632d672b0757a690e33ec75ed9c,,True
+Safe Option,0,A22,,Agent_22,21,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A22'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-ececd0cc-aa31-4e52-be06-63f575e07760', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853890, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,f23659242270669183dc2e6bc1381647,,True
+Safe Option,0,A23,,Agent_23,22,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A23'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-ff1112d0-831f-4c24-b487-e2b260a16198', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853887, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.",False,2b9cce347a3f8a972f15c24813a77a1c,,True
+Safe Option,0,A24,,Agent_24,23,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A24'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-d86149e1-0f52-4e05-84cb-bd65e154981c', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853877, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of getting nothing.",False,bbda44ca20808277015c992509e952b5,,True
+Safe Option,0,A25,,Agent_25,24,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A25'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-6d364da1-ce4b-4560-b7cb-feb8aca5cfff', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853874, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,0c78f6be1c5de1bb08da2f0fa51ab341,,True
+Safe Option,0,A26,,Agent_26,25,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A26'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-496d78ae-21f1-4a06-b030-708e3ec3bf42', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853876, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,1e1d80549546070a971be523656c5ed7,,True
+Safe Option,0,A27,,Agent_27,26,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A27'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-063b7039-2822-4cdb-a258-ebc856cc6f37', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853890, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving 0 tokens.",False,ef41eb598b3ed798fbefb6daa2cda37b,,True
+Safe Option,0,A28,,Agent_28,27,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A28'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-99f1c8c3-ecfa-4860-b7e8-05e61b5dd550', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853886, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,883d09befa98db05f02926647ed0f6b1,,True
+Safe Option,0,A29,,Agent_29,28,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A29'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-0efece2f-6290-4d7d-88d1-b96fdc40e22b', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\nI chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853873, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.","Safe Option
+I chose this option because it provides a guaranteed reward, eliminating the risk of receiving no tokens, which aligns with a risk-averse decision-making strategy.",False,fa952a2ae164ecb6e246d9e035e8f1c4,,True
+Safe Option,0,A30,,Agent_30,29,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A30'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-6f2e8268-a695-4671-afbf-58609989c2cd', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be considered a loss. The potential gain of 30 extra tokens in the Risky Option may not be worth the risk of receiving nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853884, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be considered a loss. The potential gain of 30 extra tokens in the Risky Option may not be worth the risk of receiving nothing.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be considered a loss. The potential gain of 30 extra tokens in the Risky Option may not be worth the risk of receiving nothing.",False,d0a96291172404901135f474b8928d9b,,True
+Safe Option,0,A31,,Agent_31,30,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A31'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-9aa36aab-1d3a-4f62-8a2d-a3f28e4bce74', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of losing everything.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853881, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of losing everything.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to outweigh the risk of losing everything.",False,2ca80be630a3d6e1836c1202a689bc2b,,True
+Safe Option,0,A32,,Agent_32,31,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A32'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-500b5635-c71b-4c7b-ac51-4d5aa381a7b0', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853894, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.",False,e3ad10537efd891750ec62692b45867e,,True
+Safe Option,0,A33,,Agent_33,32,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A33'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-8ba51d71-a360-4065-a77f-c9938b9770d8', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853888, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss.",False,8f4ebb5c940a273e79b45f2a98a8df70,,True
+Safe Option,0,A34,,Agent_34,33,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A34'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-e39ade14-1c3b-4d6c-b4e1-4d48df24ef14', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853881, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,6e8bc9b8b668d076728ab94c54431eab,,True
+Safe Option,0,A35,,Agent_35,34,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A35'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-fd25a19b-1f6c-44ef-9870-772445f6ebbd', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853877, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,1e74054b6666db45e33bf832a9d4ee18,,True
+Safe Option,0,A36,,Agent_36,35,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A36'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-afa16b80-0ece-4171-bd1b-d48b3ea60fdb', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853874, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has an equal chance of resulting in no tokens, which could be a significant loss.",False,fb6415367e7e0003af3a563db5f7c78f,,True
+Safe Option,0,A37,,Agent_37,36,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A37'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-4d8a5dcd-02af-4ff6-a203-6eb706a857d0', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853880, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,3a4cd8ddd040d7d9f562e2d2250b966d,,True
+Safe Option,0,A38,,Agent_38,37,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A38'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-0e1d2360-6c28-4cc3-a6d6-2fc4c8939b98', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853896, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,08c376ba4e1b33d60d721023147a066a,,True
+Safe Option,0,A39,,Agent_39,38,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A39'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-03d49e2d-bf79-46c3-960d-73dfc43c341e', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853876, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.","Safe Option
+# I chose the Safe Option because it provides a guaranteed reward, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of losing everything.",False,c7189f959591470d51435bed33880644,,True
+Safe Option,0,A40,,Agent_40,39,{},False,0.5,3,0,goodfire,0,1000,meta-llama/Llama-3.3-70B-Instruct,1,0,Your traits: {'subject_id': 'A40'},"
+SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?
+
+    
+Safe Option
+    
+Risky Option
+    
+
+Only 1 option may be selected.
+
+Respond only with a string corresponding to one of the options.
+
+
+After the answer, you can put a comment explaining why you chose that option on the next line.","{'id': 'chatcmpl-c7b5d5ef-811a-4cf7-a9be-203669db21bf', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': 'Safe Option\n# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.', 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1760853883, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",,,NA,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,,,0,"SAFE VS. RISKY CHOICE GAME
+
+You must choose between two options:
+1. Safe Option: Guaranteed 50 tokens.
+2. Risky Option: 50% chance of 80 tokens, 50% chance of 0 tokens.
+
+Which option do you choose?","['Safe Option', 'Risky Option']",multiple_choice,"# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.","Safe Option
+# I chose the Safe Option because it guarantees a certain amount of tokens, whereas the Risky Option has a 50% chance of resulting in no tokens, which could be a significant loss. The potential gain of 30 extra tokens in the Risky Option is not enough to justify the risk of getting nothing.",False,8b966a33d4ad050e5df1e50d9427e166,,True

@@ -1,0 +1,506 @@
+answer.trust_return,scenario.scenario_index,scenario.SENT_AMOUNT,scenario.TRIPLED_AMOUNT,agent.agent_index,agent.subject_id,agent.agent_instruction,agent.agent_name,model.temperature,model.logprobs,model.presence_penalty,model.frequency_penalty,model.top_logprobs,model.inference_service,model.top_p,model.model_index,model.model,model.controller,model.max_tokens,prompt.trust_return_user_prompt,prompt.trust_return_system_prompt,raw_model_response.trust_return_one_usd_buys,raw_model_response.trust_return_output_price_per_million_tokens,raw_model_response.trust_return_input_tokens,raw_model_response.trust_return_input_price_per_million_tokens,raw_model_response.trust_return_output_tokens,raw_model_response.trust_return_cost,raw_model_response.trust_return_raw_model_response,iteration.iteration,question_text.trust_return_question_text,question_options.trust_return_question_options,question_type.trust_return_question_type,comment.trust_return_comment,generated_tokens.trust_return_generated_tokens,cache_used.trust_return_cache_used,cache_keys.trust_return_cache_key,reasoning_summary.trust_return_reasoning_summary,validated.trust_return_validated
+120,0,40,120,0,A1,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_1,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A1'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-2564ebcf-a245-45a8-9cee-84f6e58ca774', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120\n\n\nI'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocize that faith."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088556, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocize that faith.","120
+
+
+I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocize that faith.",False,43dd276c29fd7b9e6e225efe46c0381b,,True
+120,0,40,120,1,A2,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_2,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A2'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-5e3778fd-9e5f-498b-98e1-e511c1da660b', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120\n\n\nI'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088558, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith.","120
+
+
+I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith.",False,ba6915d14c93848e2d43d6bbd00505e2,,True
+120,0,40,120,2,A3,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_3,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A3'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-c55429a6-b4fb-45b9-9bf9-21ea01037aee', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120\n\n\nI'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is almost half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust by returning the full amount, rather than taking advantage of the situation. This decision is based on the principle of reciprocity and the hope that it will lead to a mutually beneficial outcome."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088563, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is almost half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust by returning the full amount, rather than taking advantage of the situation. This decision is based on the principle of reciprocity and the hope that it will lead to a mutually beneficial outcome.","120
+
+
+I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is almost half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust by returning the full amount, rather than taking advantage of the situation. This decision is based on the principle of reciprocity and the hope that it will lead to a mutually beneficial outcome.",False,cd285198558ba75aeb27e4ec895d917f,,True
+120,0,40,120,3,A4,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_4,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A4'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-81161f11-3b79-4dcc-b995-bfd6ccf4ec9a', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120 \n\nI'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of that trust, and it may lead to more cooperation in future interactions."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088558, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of that trust, and it may lead to more cooperation in future interactions.","120 
+
+I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of that trust, and it may lead to more cooperation in future interactions.",False,342286357db8529348b85893438ad1fa,,True
+120,0,40,120,4,A5,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_5,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A5'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-633acc54-f7f3-4985-a914-bea209d9ebdc', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120 \n\nI'm returning the amount Player A sent me tripled because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to demonstrate my own faith in them by returning the amount they've given me. This way, I'm showing that I'm worthy of their trust."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088561, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount Player A sent me tripled because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to demonstrate my own faith in them by returning the amount they've given me. This way, I'm showing that I'm worthy of their trust.","120 
+
+I'm returning the amount Player A sent me tripled because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to demonstrate my own faith in them by returning the amount they've given me. This way, I'm showing that I'm worthy of their trust.",False,ff99b8a512c2749335d1fb60ba06b26c,,True
+120,0,40,120,5,A6,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_6,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A6'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-7ef244db-f4dd-48f4-b7b8-e6053ad5ff0a', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120 \n\nI'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of their trust, and it may also encourage Player A to make similar decisions in the future. Additionally, since I have no reason to doubt Player A, I'm willing to take a chance and return the amount, hoping that it will lead to a positive outcome."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088562, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of their trust, and it may also encourage Player A to make similar decisions in the future. Additionally, since I have no reason to doubt Player A, I'm willing to take a chance and return the amount, hoping that it will lead to a positive outcome.","120 
+
+I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, and I want to reciprocate that trust. By returning the full amount, I'm demonstrating that I'm worthy of their trust, and it may also encourage Player A to make similar decisions in the future. Additionally, since I have no reason to doubt Player A, I'm willing to take a chance and return the amount, hoping that it will lead to a positive outcome.",False,5ea6a51d5efe6d8fc13f4b85084df7b2,,True
+120,0,40,120,6,A7,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_7,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A7'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-64ff1834-ee71-41dd-b443-e38d5f3b9008', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120\n\n\nI'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is nearly half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust. Returning the full amount will not only show that I am trustworthy but also encourage Player A to make similar decisions in the future."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088560, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is nearly half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust. Returning the full amount will not only show that I am trustworthy but also encourage Player A to make similar decisions in the future.","120
+
+
+I'm returning the full amount because I believe that Player A has shown a significant amount of trust in me by sending 40 tokens, which is nearly half of the total amount they had. By tripling this amount, I now have a substantial amount of tokens, and I feel that I should reciprocate this trust. Returning the full amount will not only show that I am trustworthy but also encourage Player A to make similar decisions in the future.",False,25895555025e6fe1c264c0e4145f87ea,,True
+120,0,40,120,7,A8,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_8,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A8'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-0ebd83ab-8ac5-44aa-b79b-ace86284168e', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120 \n\nI'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088561, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith.","120 
+
+I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I want to reciprocate that faith.",False,f75d99c70dfae94e97b50b0a647eba07,,True
+120,0,40,120,8,A9,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_9,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A9'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-8027286c-47d8-4e5b-aad4-0007e5668d57', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120\n\n\nI'm returning the amount I received because I believe Player A has shown enough faith in me, and I should reciplicate that faith. I'm also aware that Player A might have sent me a significant portion of the tokens, so I should be able to return the same amount. This way, I'm showing that I'm responsible and can be trusted."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088561, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount I received because I believe Player A has shown enough faith in me, and I should reciplicate that faith. I'm also aware that Player A might have sent me a significant portion of the tokens, so I should be able to return the same amount. This way, I'm showing that I'm responsible and can be trusted.","120
+
+
+I'm returning the amount I received because I believe Player A has shown enough faith in me, and I should reciplicate that faith. I'm also aware that Player A might have sent me a significant portion of the tokens, so I should be able to return the same amount. This way, I'm showing that I'm responsible and can be trusted.",False,2950b874fa170c9e6844441f67a48015,,True
+120,0,40,120,9,A10,"You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.",Agent_10,0.5,False,0,0,3,goodfire,1,0,meta-llama/Llama-3.3-70B-Instruct,"{'interventions': [{'mode': 'nudge', 'features': {'features': [{'uuid': '4e2c9b8b769d4ceeac837509ffc530e9', 'label': 'Expressions of trust in intimate or vulnerable contexts', 'index_in_sae': 38558, 'max_activation_strength': 1}]}, 'value': 0.4}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'a4b0c6bd745744e6a64035b6c7c44e1b', 'label': 'Expressions of trustworthiness and dependability', 'index_in_sae': 17623, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': 'c50be65067cc4f808ec7531c24468cbf', 'label': 'Expressions of trust and confidence in relationships or beliefs', 'index_in_sae': 39359, 'max_activation_strength': 1}]}, 'value': 0.3}, {'mode': 'nudge', 'features': {'features': [{'uuid': '1194a247aee14519a8ba41282c35b13a', 'label': 'Trust and trustworthiness in relationships', 'index_in_sae': 11444, 'max_activation_strength': 1}]}, 'value': 0.4}], 'scopes': [], 'name': 'controller__43997065', 'nonzero_strength_threshold': None, 'min_nudge_entropy': None, 'max_nudge_entropy': None}",1000,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you 40 tokens, which has been tripled to 120 tokens.
+
+How much would you like to return to Player A? 
+
+
+    Maximum answer value: 120
+This question requires a numerical response in the form of an integer or decimal (e.g., -12, 0, 1, 2, 3.45, ...).
+Respond with just your number on a single line.
+If your response is equivalent to zero, report '0'
+
+
+After the answer, put a comment explaining your choice on the next line.","You are participating in an economic experiment at a research lab. Please behave as a typical participant would:
+
+1. Read all instructions carefully
+2. Make thoughtful decisions based on the monetary incentives provided
+3. Consider the consequences of your choices for both yourself and other participants
+4. Answer honestly and to the best of your ability
+
+Your decisions will have monetary consequences in the experiment, so please consider them carefully.Your traits: {'subject_id': 'A10'}",NA,,,,,Could not fetch tokens from model response: 'NoneType' object is not subscriptable,"{'id': 'chatcmpl-44576105-c21b-48d6-95f1-ae00f55e60c6', 'choices': [{'finish_reason': None, 'index': 0, 'logprobs': None, 'message': {'content': ""120 \n\nI'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I don't want to betray that faith."", 'refusal': None, 'role': 'assistant', 'annotations': None, 'audio': None, 'function_call': None, 'tool_calls': None}}], 'created': 1758088556, 'model': 'meta-llama/Llama-3.3-70B-Instruct', 'object': 'chat.completion', 'service_tier': None, 'system_fingerprint': 'fp_goodfire', 'usage': None, 'gf_event_names': None}",0,"TRUST GAME EXPERIMENT - PLAYER B (RECEIVER)
+
+You are participating in a Trust Game with another participant. Here's how it works:
+
+1. The 'sender' (Player A) was given 100 tokens and chose to send some portion to you.
+2. The amount sent to you has been TRIPLED.
+3. You now need to decide how much to return to Player A.
+4. You can return any amount from 0 up to the tripled amount you received.
+5. You keep any tokens you don't return.
+
+Player A sent you {{ SENT_AMOUNT }} tokens, which has been tripled to {{ TRIPLED_AMOUNT }} tokens.
+
+How much would you like to return to Player A? ",,numerical,"I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I don't want to betray that faith.","120 
+
+I'm returning the amount I received because I believe Player A sent me a significant portion of their tokens, indicating they have faith in me, and I don't want to betray that faith.",False,a7174818755f12f6c0ef5afceca62ce2,,True
