@@ -14,7 +14,7 @@ from social_sim_open_sae import (
 def risky_rewards() -> list[dict[str, int]]:
     """Reward sweep used in the safe-risk game."""
 
-    return [{"risky_reward": reward} for reward in range(80, 181, 5)]
+    return [{"risky_reward": reward} for reward in range(10, 181, 5)]
 
 
 def parse_behavior(unit: dict[str, object]) -> dict[str, int]:
@@ -38,7 +38,7 @@ def build_game_spec() -> GameSpec:
                 question_name="safe_risky_choice",
                 question_type="multiple_choice",
                 question_text=(
-                    "You are playing a lottery game. Option safe gives 100 tokens for "
+                    "You are playing a lottery game. Option safe gives 50 tokens for "
                     "sure. Option risky gives {{ scenario.risky_reward }} tokens with "
                     "50 percent probability and 0 tokens otherwise. Choose one option."
                 ),
