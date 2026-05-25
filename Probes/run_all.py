@@ -1,11 +1,11 @@
 """Top-level orchestrator: run every figure for one model.
 
 Usage:
-    python -m probe_pipeline_final.run_all --model llama --outdir runs/llama_final
-    python -m probe_pipeline_final.run_all --model qwen  --outdir runs/qwen_final
+    python -m Probes.run_all --model llama --outdir runs/llama_final
+    python -m Probes.run_all --model qwen  --outdir runs/qwen_final
 
 Then aggregate with:
-    python -m probe_pipeline_final.aggregator \
+    python -m Probes.aggregator \
         --llama-run runs/llama_final --qwen-run runs/qwen_final \
         --out probe_results_final.json
 """
