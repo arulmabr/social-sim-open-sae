@@ -29,7 +29,7 @@ For each of two base models (`Llama-3.3-70B-Instruct`, `Qwen-2-7B-Instruct`):
 ## Folder layout
 
 ```
-probe_pipeline_final/
+Probes/
 ├── README.md              # this file
 ├── requirements.txt
 ├── config.py              # model/layer/grid/seed constants
@@ -97,20 +97,23 @@ Roughly:
 ## Quick run
 
 ```bash
-pip install -r requirements.txt
+pip install -r Probes/requirements.txt
 export OPENAI_API_KEY=...                 # for the GPT-5 judge
 export HF_TOKEN=...                       # for gated Llama weights
+export ANTHROPIC_API_KEY=...              # optional multi-judge scorer
+export GOOGLE_API_KEY=...                 # optional multi-judge scorer
+export TOGETHER_API_KEY=...               # optional multi-judge scorer
 
-python -m probe_pipeline_final.run_all \
+python -m Probes.run_all \
   --model llama \
   --outdir runs/llama_final
 
-python -m probe_pipeline_final.run_all \
+python -m Probes.run_all \
   --model qwen \
   --outdir runs/qwen_final
 
 # Aggregate both runs into the canonical JSON
-python -m probe_pipeline_final.aggregator \
+python -m Probes.aggregator \
   --llama-run runs/llama_final \
   --qwen-run  runs/qwen_final \
   --out probe_results_final.json
@@ -120,26 +123,28 @@ python -m probe_pipeline_final.aggregator \
 
 The judge layer supports five judge models across four providers:
 
-| `judge_name`         | Provider   | Model ID                          | API key source                                                         |
-|----------------------|-----------|------------------------------------|------------------------------------------------------------------------|
-| `gpt-5`              | OpenAI    | `gpt-5`                            | `OPENAI_API_KEY`                                                       |
-| `claude-sonnet-4-6`  | Anthropic | `claude-sonnet-4-6`                | `ANTHROPIC_API_KEY` or `~/Desktop/Berkeley/occupation_task/api_key_anthropic.txt`     |
-| `gemini-3.1-pro`     | Google    | `gemini-3.1-pro`                   | `GOOGLE_API_KEY` or `~/Desktop/Berkeley/occupation_task/api_key_gemini_final.txt`     |
-| `kimi-k2.5`          | Together  | `moonshotai/Kimi-K2-Instruct`      | `TOGETHER_API_KEY` or `~/Desktop/Berkeley/occupation_task/api_key_together.txt`       |
-| `deepseek-r1`        | Together  | `deepseek-ai/DeepSeek-R1`          | same as Kimi (Together)                                                |
-
-Env vars take precedence; file paths are fallback.
+| `judge_name`         | Provider   | Model ID                          | API key source |
+|----------------------|-----------|------------------------------------|----------------|
+| `gpt-5`              | OpenAI    | `gpt-5`                            | `OPENAI_API_KEY` |
+| `claude-sonnet-4-6`  | Anthropic | `claude-sonnet-4-6`                | `ANTHROPIC_API_KEY` |
+| `gemini-3.1-pro`     | Google    | `gemini-3.1-pro-preview`           | `GOOGLE_API_KEY` |
+| `gemini-2.5-pro`     | Google    | `gemini-2.5-pro`                   | `GOOGLE_API_KEY` |
+| `kimi-k2.6`          | Together  | `moonshotai/Kimi-K2.6`             | `TOGETHER_API_KEY` |
+| `deepseek-v4-pro`    | Together  | `deepseek-ai/DeepSeek-V4-Pro`      | `TOGETHER_API_KEY` |
 
 Re-score existing capability outputs (no need to regenerate responses):
 
 ```bash
-python -m probe_pipeline_final.multi_judge_rescore \
+python -m Probes.multi_judge_rescore \
     --in probe_results_final.json \
-    --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.5 deepseek-r1 \
+    --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.6 deepseek-v4-pro \
     --out runs/multi_judge \
-    --blind \                 # pool all responses, shuffle, score in random order
-    --length-controlled       # append length-blind suffix to rubric
+    --blind \
+    --length-controlled
 ```
+
+`--blind` pools and shuffles all responses before scoring. `--length-controlled`
+adds a length-blind instruction to the rubric.
 
 Outputs:
 - `multi_judge_scores.jsonl`: one row per (response, judge) with the 4 Torrance sub-scores, mean creativity_score, response length, and blind-order index

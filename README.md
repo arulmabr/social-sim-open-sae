@@ -6,7 +6,7 @@ the paper: **SAE-based steering** (Sparse Autoencoder feature editing) and
 own subdirectory with its own dependencies and GPU requirements.
 
 ```
-LLM_Steering_pipeline/
+llm-steering-pipeline/
 ├── SAE/       # EDSL social-simulation platform + Goodfire Open-SAE feature inspection & steering
 └── Probes/    # Probe training, calibration, steered experiments, and figure generation
 ```
@@ -159,16 +159,15 @@ figure_19_cross_object_generalization_qwen
 ### Quick start (Probes)
 
 ```bash
-cd Probes
-pip install -r requirements.txt
+pip install -r Probes/requirements.txt
 export OPENAI_API_KEY=...    # for the GPT-5 judge
 export HF_TOKEN=...          # for gated Llama weights
 
-python -m probe_pipeline_final.run_all --model llama --outdir runs/llama_final
-python -m probe_pipeline_final.run_all --model qwen  --outdir runs/qwen_final
+python -m Probes.run_all --model llama --outdir runs/llama_final
+python -m Probes.run_all --model qwen  --outdir runs/qwen_final
 
 # Aggregate into canonical JSON
-python -m probe_pipeline_final.aggregator \
+python -m Probes.aggregator \
   --llama-run runs/llama_final \
   --qwen-run  runs/qwen_final \
   --out probe_results_final.json
@@ -182,14 +181,14 @@ Five judge models across four providers:
 |---|---|---|
 | `gpt-5` | OpenAI | `gpt-5` |
 | `claude-sonnet-4-6` | Anthropic | `claude-sonnet-4-6` |
-| `gemini-3.1-pro` | Google | `gemini-3.1-pro` |
-| `kimi-k2.5` | Together | `moonshotai/Kimi-K2-Instruct` |
-| `deepseek-r1` | Together | `deepseek-ai/DeepSeek-R1` |
+| `gemini-3.1-pro` | Google | `gemini-3.1-pro-preview` |
+| `kimi-k2.6` | Together | `moonshotai/Kimi-K2.6` |
+| `deepseek-v4-pro` | Together | `deepseek-ai/DeepSeek-V4-Pro` |
 
 ```bash
-python -m probe_pipeline_final.multi_judge_rescore \
+python -m Probes.multi_judge_rescore \
     --in probe_results_final.json \
-    --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.5 deepseek-r1 \
+    --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.6 deepseek-v4-pro \
     --out runs/multi_judge \
     --blind --length-controlled
 ```

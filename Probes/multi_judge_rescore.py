@@ -15,9 +15,9 @@ Outputs in the `--out` directory:
 4. `errors.jsonl`               one line per failed (row, judge) call
 
 Usage:
-    python -m probe_pipeline_final.multi_judge_rescore \
+    python -m Probes.multi_judge_rescore \
         --in probe_results_final.json \
-        --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.5 deepseek-r1 \
+        --judges gpt-5 claude-sonnet-4-6 gemini-3.1-pro kimi-k2.6 deepseek-v4-pro \
         --out runs/multi_judge \
         --max-workers 24 \
         --blind --length-controlled
@@ -353,7 +353,7 @@ def main() -> None:
     parser.add_argument("--in", dest="in_path", type=Path, required=True)
     parser.add_argument(
         "--judges", nargs="+",
-        default=["gpt-5", "claude-sonnet-4-6", "gemini-3.1-pro", "kimi-k2.5", "deepseek-r1"],
+        default=["gpt-5", "claude-sonnet-4-6", "gemini-3.1-pro", "kimi-k2.6", "deepseek-v4-pro"],
     )
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--max-workers", type=int, default=16)

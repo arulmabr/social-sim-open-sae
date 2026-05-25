@@ -4,8 +4,8 @@ Adapters for five judge models across four providers:
 - GPT-5                 (OpenAI)
 - Claude Sonnet 4.6     (Anthropic)
 - Gemini 3.1 Pro        (Google)
-- Kimi K2.5             (Together AI, OpenAI-compatible endpoint)
-- DeepSeek R1           (Together AI, OpenAI-compatible endpoint)
+- Kimi K2.6             (Together AI, OpenAI-compatible endpoint)
+- DeepSeek V4 Pro       (Together AI, OpenAI-compatible endpoint)
 
 Each adapter implements `.call(prompt, temperature) -> str`. The shared
 `score_response_with_judge(text, task, judge_name)` routes to the right
@@ -20,20 +20,12 @@ import os
 import re
 import time
 from dataclasses import dataclass
-from pathlib import Path
-from typing import Callable, Dict, List, Optional
+from typing import Dict, List, Optional
 
 
 # =========================================================================
 # API key resolution
 # =========================================================================
-DEFAULT_KEY_FILES = {
-    "openai": Path("/Users/Shreyas2/Desktop/Berkeley/occupation_task/api_key_openai3.txt"),
-    "anthropic": Path("/Users/Shreyas2/Desktop/Berkeley/occupation_task/api_key_anthropic.txt"),
-    "google": Path("/Users/Shreyas2/Desktop/Berkeley/occupation_task/api_key_gemini_final.txt"),
-    "together": Path("/Users/Shreyas2/Desktop/Berkeley/occupation_task/api_key_together.txt"),
-}
-
 ENV_VARS = {
     "openai": "OPENAI_API_KEY",
     "anthropic": "ANTHROPIC_API_KEY",
@@ -43,16 +35,13 @@ ENV_VARS = {
 
 
 def load_api_key(provider: str) -> str:
-    """Resolve API key for a provider. Env var wins; file path is fallback."""
+    """Resolve API key for a provider from environment variables only."""
     env_name = ENV_VARS.get(provider)
     if env_name and os.environ.get(env_name):
         return os.environ[env_name].strip()
-    path = DEFAULT_KEY_FILES.get(provider)
-    if path and path.exists():
-        return path.read_text().strip()
     raise RuntimeError(
         f"No API key for provider '{provider}'. "
-        f"Set env var {env_name!r} or create file {path!s}."
+        f"Set environment variable {env_name!r}."
     )
 
 
@@ -177,7 +166,7 @@ class GeminiAdapter(JudgeAdapter):
 class TogetherAdapter(JudgeAdapter):
     """Together AI uses an OpenAI-compatible API at base_url=https://api.together.xyz/v1.
 
-    Used here for Kimi K2.5 (moonshotai/Kimi-K2-Instruct) and DeepSeek-R1.
+    Used here for Kimi K2.6 and DeepSeek V4 Pro.
     """
     def call(self, prompt: str, temperature: float = 0.0, max_tokens: int = 8000) -> str:
         # Kimi-K2.6 and DeepSeek-V4-Pro are reasoning models: they burn a large
